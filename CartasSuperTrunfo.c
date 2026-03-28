@@ -7,9 +7,71 @@
 int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
 
+  char estado_1;
+  char estado_2;
+  char codigo_1[4];
+  char codigo_2[4];
+  char cidade_1[30];
+  char cidade_2[30];
+  int populacao_1;
+  int populacao_2;
+  float area_1;
+  float area_2;
+  float pib_1;
+  float pib_2;
+  int qtd_ponto_turistico_1;
+  int qtd_ponto_turistico_2;
+
+
   // Área para entrada de dados
+
+   printf("Digite a letra do primeiro estado: ");
+  scanf(" %c", &estado_1); // Adicionado o '&'
+
+  printf("Digite a letra do segundo estado: ");
+  scanf(" %c", &estado_2); // Adicionado o '&'
+
+  printf("Digite o codigo da primeira carta: ");
+  scanf(" %s", codigo_1);
+
+  printf("Digite o codigo da segunda carta: ");
+  scanf(" %s", codigo_2);
+
+  printf("Digite a cidade da primeira carta: ");
+  scanf(" %[^\n]", cidade_1);
+
+  printf("Digite a cidade da segunda carta: ");
+  scanf(" %[^\n]", cidade_2);
+
+  printf("Digite a população da primeira carta: ");
+  scanf(" %d", &populacao_1);
+
+  printf("Digite a população da segunda carta: ");
+  scanf(" %d", &populacao_2);
+
+  printf("Digite a área da primeira carta: ");
+  scanf(" %f", &area_1); 
+
+  printf("Digite a área da segunda carta: ");
+  scanf(" %f", &area_2); 
+
+  printf("Digite o pib da primeira carta: ");
+  scanf(" %f", &pib_1); 
+
+  printf("Digite o pib da segunda carta: ");
+  scanf(" %f", &pib_2); 
+
+  printf("Digite a qtd de pt da primeira carta: ");
+  scanf(" %d", &qtd_ponto_turistico_1);
+
+  printf("Digite a qtd de pt da segunda carta: ");
+  scanf(" %d", &qtd_ponto_turistico_2);
 
   // Área para exibição dos dados da cidade
 
-return 0;
+  printf("\n carta 1:\n Estado: %c \n Código: %s \n Cidade: %s \n população: %d \n Área: %.2f \n PIB: %.2f \n num de Pontos turísticos: %d \n", estado_1, codigo_1, cidade_1, populacao_1, area_1, pib_1, qtd_ponto_turistico_1 );
+  printf("\n carta 2:\n Estado: %c \n Código: %s \n Cidade: %s \n população: %d \n Área: %.2f \n PIB: %.2f \n num de Pontos turísticos: %d \n", estado_2, codigo_2, cidade_2, populacao_2, area_2, pib_2, qtd_ponto_turistico_2 );
+  
+  
+  return 0;
 } 
